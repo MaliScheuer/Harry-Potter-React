@@ -4,16 +4,16 @@ import styled from 'styled-components'
 
 
 
-export default function Card({ name, house, image, patronus, hogwartsStudent, currywurst }) {
+export default function Card({ name, house, image, patronus, hogwartsStudent }) {
 
     return (
-        <Wrapper {currywurst}>
+        <Wrapper>
 
             <h2>{name}</h2>
             <h3>{house}</h3>
             <h3>{patronus}</h3>
             <h3>{hogwartsStudent}</h3>
-            <img>{image}</img>
+            <img src={image} alt='A picture of a Hogwards Character' />
 
         </Wrapper>
     )
